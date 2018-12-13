@@ -1,0 +1,70 @@
+@import '../../node_modules/@angular/material/theming';
+
+@import './_palette';
+
+@include mat-core();
+
+/*
+ * Theme
+ */
+
+$theme-primary: mat-palette($mat-blue-grey, 700, 500, 900);
+$theme-accent: mat-palette($mat-deep-orange);
+$theme-warn: mat-palette($mat-red);
+
+$light-theme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
+
+@include angular-material-theme($light-theme);
+
+///*
+// * Colors
+// *
+
+$color-primary: map-get($light-theme, primary);
+$color-accent: map-get($light-theme, accent);
+$color-warn: map-get($light-theme, warn);
+
+$primaryColor: #373F52;
+$primaryContrast: mat-contrast($color-primary, 900);
+
+$accentColor: mat-color($color-accent);
+$accentContrast: mat-contrast($color-accent, 900);
+
+$warnColor: mat-color($color-warn);
+$warnContrast: mat-contrast($color-warn, 900);
+
+$menuBackground: #EEEEEE;
+$menuColor: #333333;
+
+$color__text-darkest: rgba(0, 0, 0, .87);
+$color__text-darker: #333;
+$color__text-dark: #666;
+$color__text-light: #999;
+$background-color: #FAFAFA;
+
+$loader-backdrop-colour: rgba(white, 0.75);
+
+$navBar: #2E394D;
+$filter__bar: #373F52;
+
+//
+///*
+// * Global Mixins
+// */
+
+@mixin mat-icon-size($size: 24px) {
+  font-size: $size;
+  height: $size;
+  width: $size;
+  line-height: $size;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}

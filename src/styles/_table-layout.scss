@@ -1,0 +1,97 @@
+@import "../styles/var";
+
+.ax-page {
+  //margin: 10px;
+}
+
+.ax-toolbar {
+  margin: 1%;
+  .mat-button-toggle-group {
+    background-color: rgba(map_get($color-primary, 500), .50);
+  }
+  .mat-button-toggle {
+    color: $color__text-darker;
+  }
+  .mat-button-toggle-checked {
+    background-color: map_get($color-primary, 300);
+    color: $color__text-darker;
+  }
+  .download-toggle {
+    background-color: rgba(map_get($color-primary, 500), .50);
+    color: $color__text-darker;
+  }
+}
+
+.ax-title-row {
+  height: 50px;
+  border-bottom: 2px solid #EEE;
+  padding: 5px;
+  .cell {
+    font-size: 15px;
+    padding-left: 1vw;
+  }
+  .mat-icon-button {
+    //margin-top: -15px;
+    color: map_get($color-accent, 500);
+  }
+
+  .page-count {
+    flex-shrink: 0;
+    margin-top: 11px;
+    margin-left: 15px;
+    color: map_get($color-accent, 500);
+  }
+}
+
+@mixin m_ax-row {
+  //height: 30px;
+  padding: 5px;
+  &:hover {
+    background-color: rgba(map_get($color-accent, 50), .50);
+  }
+  .cell {
+    font-size: 12px;
+    padding-left: 1vw;
+  }
+}
+
+.ax-row {
+  @include m_ax-row;
+  background-color: rgba($background-color, .50);
+  cursor: pointer;
+}
+
+.ax-rows {
+  @include m_ax-row;
+  background-color: rgba($background-color, .25);
+}
+
+.ax-row-even {
+  @include m_ax-row;
+  background-color: rgba(map_get($color-primary, 50), .25);
+}
+
+.ax-row-odd {
+  @include m_ax-row;
+  background-color: rgba(map_get($color-primary, 100), .25);
+}
+
+#selected-entry {
+  background-color: rgba($background-color, .50);
+}
+
+.disabled-arrow {
+  color: rgba(map_get($color-primary, 500), .50);
+}
+
+.no-entries {
+  padding-top: 15px;
+}
+
+.no-entries-text {
+  margin-left: 1vw;
+}
+
+.loading-spinner {
+  margin-top: 1vw;
+}

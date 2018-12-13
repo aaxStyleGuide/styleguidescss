@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~normalize.css/normalize.css";
+@import "styles/_var.scss";
+
+* {
+  font-family: Muli, "Helvetica Neue", sans-serif;
+}
+
+html, body {
+  min-height: 100%;
+  height: 100%;
+  line-height: normal;
+  font-family: Muli, 'Helvetica Neue', Arial, sans-serif;
+  color: #111;
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.custom-dialog .mat-dialog-container {
+  @include mat-elevation(5);
+  border-radius: 11px !important;
+  padding: 0 !important;
+}
+
+// Tooltip UI update
+// user .tooltip class to consume
+.mat-tooltip.tooltip {
+  background-color: #fafafa;
+  color: $primaryColor;
+  font-size: 12px;
+  font-family: Muli, sans-serif;
+  letter-spacing: -0.2px;
+  padding: 15px;
+}
+
+$primaryColor: mat-color($color-primary);
+$accentColor: mat-color($color-accent);
