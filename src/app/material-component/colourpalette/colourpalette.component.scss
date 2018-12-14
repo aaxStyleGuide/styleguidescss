@@ -1,0 +1,78 @@
+.RectanglePrimary {
+   width: 96px;
+   height: 96px;
+   border-radius: 4px;
+   background-color: #2e394c;
+ }
+.RectanglePrimaryLight {
+  width: 96px;
+  height: 96px;
+  border-radius: 4px;
+  background-color: #383F50;
+}
+.RectangleDark {
+  width: 96px;
+  height: 96px;
+  border-radius: 4px;
+  background-color: #061324;
+}
+.RectangleSecondary {
+  width: 96px;
+  height: 96px;
+  border-radius: 4px;
+  background-color: #f1592a;
+}
+.RectangleSecondaryLight {
+  width: 96px;
+  height: 96px;
+  border-radius: 4px;
+  background-color: #ff8b58;
+}
+.RectangleSecondaryDark {
+  width: 96px;
+  height: 96px;
+  border-radius: 4px;
+  background-color: #b72300;
+}
+.RectangleWhite {
+  width: 96px;
+  height: 96px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+.RectangleGrey {
+  width: 96px;
+  height: 96px;
+  border-radius: 4px;
+  background-color: #585858;
+}
+.RectangleOffWhite {
+  width: 96px;
+  height: 96px;
+  border-radius: 4px;
+  background-color: #f6f6f6;
+}
+
+.RectanglePrimary::after {
+  content: " HEX 0000";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
+
+.RectangleOffWhite {
+  width: 96px;
+  height: 96px;
+  border-radius: 4px;
+  background-color: #f6f6f6;
+}
+
+
+.ColourInfo {
+  width: 96px;
+  height: 40px !important;
+  background-color: #fff;
+  padding-top: 5% !important;
+  padding-bottom: 5% !important;
+}
+

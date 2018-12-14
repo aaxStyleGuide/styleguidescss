@@ -1,0 +1,14 @@
+@import "../../../../styles/var";
+  div {
+    background-color: $filter__bar;
+    color: $primaryContrast;
+    padding: 10px 15px;
+
+  h1 {
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    max-height: 38px;
+  }
+}

@@ -1,0 +1,61 @@
+@import '~@angular/material/theming';
+@import "../../../styles/var";
+
+@include mat-core();
+
+$warnColor: mat-color($color-warn);
+
+.sidenav-container {
+  min-height: 100vh;
+  opacity: 1;
+
+  &.hideable {
+    opacity: 0;
+  }
+
+  .sidebar {
+    width: 200px;
+    @include mat-elevation(2);
+
+    .sidebar-container {
+      padding: 20px;
+    }
+  }
+
+  mat-sidenav-content {
+    .router-contents {
+      padding: 20px;
+      width: 100vw;
+    }
+  }
+
+  .page-wrap {
+    min-height: 100vh;
+
+    mat-progress-bar {
+      margin-bottom: -5px;
+    }
+
+    header {
+      z-index: 2;
+    }
+
+    app-headertitle {
+      height: 56px;
+    }
+
+    footer {
+      background-color: $primaryColor;
+      color: $primaryContrast;
+      min-height: 15px;
+      padding: 5px 20px;
+      font-size: 0.7em;
+      text-align: center;
+    }
+  }
+
+  .content {
+    height: 100vh !important;
+    min-height:100vh;
+  }
+}

@@ -1,0 +1,72 @@
+<mat-card>
+  <mat-card-content>    
+  <mat-card-title>Buttons</mat-card-title>
+
+      <h3>Flat Buttons <!--<br/><code class="bg-light">&lt;button mat-button color="primary"&gt;Primary&lt;/button&gt;</code>--></h3>
+    <div class="button-row">
+      <button mat-button class="mat-flat-button">Button</button>
+      <button mat-button class="mat-flat-button mat-primary" color="primary">Button</button>
+      <button mat-button class="mat-flat-button mat-accent" class="mat-accent" color="accent">Button</button>
+      <button mat-button class="mat-flat-button mat-warn" color="warn">Button</button>
+      <button mat-button disabled>Button</button>
+      <a mat-button routerLink=".">Button</a>
+    </div>
+    <div class="spacer56"></div>
+    <h4>Raised Buttons <!--<br/><code class="bg-light">&lt;button mat-raised-button color="primary"&gt;Primary&lt;/button&gt;</code>--></h4>
+    <div class="button-row">
+      <button mat-raised-button>Button</button>
+      <button mat-raised-button class="mat-raised-button mat-primary" color="primary">Button</button>
+      <button mat-raised-button class="mat-raised-button mat-accent" color="accent">Button</button>
+      <button mat-raised-button class="mat-raised-button mat-warn" color="warn">Button</button>
+      <button mat-raised-button disabled>Button</button>
+      <a mat-raised-button routerLink=".">Button</a>
+    </div>
+    <div class="spacer56"></div>
+    <h4>Icon Buttons <!--<br/><code class="bg-light">&lt;button mat-icon-button color="primary"&gt; <br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;mat-icon aria-label="Example icon-button with a heart icon"&gt;favorite&lt;/mat-icon&gt;<br/>&lt;/button&gt;</code>--></h4>
+
+    <div class="button-row">
+      Icon buttons
+      <button mat-icon-button>
+        <mat-icon class="icon" svgIcon="before"></mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon class="icon" svgIcon="next"></mat-icon>
+      </button>
+    </div>
+
+    <div class="button-row">
+      Styled
+      <button mat-icon-button>
+        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+      </button>
+      <button mat-icon-button color="primary">
+        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+      </button>
+      <button mat-icon-button color="accent">
+        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+      </button>
+      <button mat-icon-button color="warn">
+        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+      </button>
+      <button mat-icon-button disabled>
+        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+      </button>
+    </div>
+
+    <div class="button-row">
+      Segmented
+      <button mat-icon-button>
+        <mat-icon class="icon" svgIcon="bike"></mat-icon>
+      </button>
+    </div>
+
+    <div class="spacer56"></div>
+    <h4>Floating action buttons<!-- <br/><code class="bg-light">&lt;button mat-fab color="primary"&gt;Primary&lt;/button&gt;</code>--></h4>
+    <div class="button-row">
+      Action
+      <button mat-icon-button>
+        <mat-icon class="icon" svgIcon="done"></mat-icon>
+      </button>
+    </div>
+  </mat-card-content>
+</mat-card>

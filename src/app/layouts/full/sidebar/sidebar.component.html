@@ -1,0 +1,10 @@
+<div class="navigation sidebar" fxFlex *ngIf="!isMobile">
+  <div fxLayout="row" fxLayoutAlign="start center">
+    <div class="navigation-item-container" *ngFor="let menuitem of menuItems.getMenuitem(menuItemState)">
+      <a class="navigation-item" routerLinkActive="active" [routerLink]="['/', menuitem.state]" [queryParams]="{menuItemName: menuitem.name, menuItemState: menuitem.state}" fxLayout="row" fxLayoutAlign="start center" (click)="currentlyOpen = !currentlyOpen">
+        <span class="name">{{ menuitem.name }}</span>
+      </a>
+    </div>
+  </div>
+</div>
+

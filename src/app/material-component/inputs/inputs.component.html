@@ -1,0 +1,46 @@
+<div fxLayout="row" fxLayoutWrap="wrap">
+  <!-- Card column -->
+  <div fxFlex.gt-sm="100%" fxFlex="100">
+    <mat-card>
+      <mat-card-content>
+<div class="section-form-container" style="max-width:50%">
+<h3>Input Fields</h3>
+<div class="like textinput">
+  <mat-form-field class="textinput">
+    <input matInput placeholder="Input title" value="Active text input">
+  </mat-form-field>
+</div>
+<div class="spacer56"></div>
+<div class="like textinput">
+  <mat-form-field class="textinput">
+    <input matInput placeholder="Invalid text input" [formControl]="emailFormControl"
+           [errorStateMatcher]="matcher">
+    <mat-hint>Errors appear instantly!</mat-hint>
+    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+      The input requires a value
+    </mat-error>
+    <mat-error *ngIf="emailFormControl.hasError('required')">
+      Field is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+</div>
+<div class="spacer56"></div>
+<div class="like textinput">
+  <mat-form-field class="textinput">
+    <textarea matInput placeholder="Text area">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+  </mat-form-field>
+</div>
+<div class="spacer56"></div>
+<div class="like textinput">
+<mat-form-field class="textinput">
+  <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker [startAt]="date"></mat-datepicker>
+</mat-form-field>
+</div>
+
+    </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<mat-card>
+  <mat-card-content>    
+  <mat-card-title>Table</mat-card-title>
+    <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <!-- Position Column -->
+      <ng-container matColumnDef="position">
+        <mat-header-cell *matHeaderCellDef> Column Heading </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+      </ng-container>
+      <!-- Name Column -->
+      <ng-container matColumnDef="calories">
+        <mat-header-cell *matHeaderCellDef> Calories </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.calories}} </mat-cell>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="fat">
+        <mat-header-cell *matHeaderCellDef> Fat(g) </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.fat}} </mat-cell>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="carbs">
+        <mat-header-cell *matHeaderCellDef> Carbs(g) </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.carbs}} </mat-cell>
+      </ng-container>
+
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="protien">
+        <mat-header-cell *matHeaderCellDef> Protien(g) </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.protien}} </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,54 @@
+@import "../../../../styles/var";
+
+.toolbar {
+  background-color: $navBar;
+}
+
+.nav-container {
+  width: 100vw;
+  background-color: #383f50 !important;
+
+  .sidebar-trigger {
+    padding-top: 6px;
+    cursor: pointer;
+  }
+}
+
+.mat-toolbar.mat-primary {
+  background-color: #383f50 !important;
+}
+
+.navigation-item-container {
+    .navigation-item {
+      padding: 16px;
+      position: relative;
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+
+    &.active {
+      color: mat-color($color-accent);
+    }
+  }
+}
+
+
+.sidebar {
+  background-color: #383f50 !important;
+  text-size:14px !important;
+}
+
+  div_title {
+    background-color: $filter__bar;
+    color: $primaryContrast;
+    padding: 10px 40px;
+
+  h1 {
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    word-wrap: break-word;
+    max-height: 38px;
+  }
+}

@@ -1,0 +1,14 @@
+<mat-toolbar class="toolbar">
+  <div fxLayout="row" fxLayoutAlign="start center" class="nav-container">
+    <a href="./home"><img class="logo" src="../../../../assets/images/logo.png" alt="Logo"></a>
+    <div class="navigation" fxFlex *ngIf="!isMobile">
+      <div fxLayout="row" fxLayoutAlign="end center">
+        <div class="navigation-item-container" *ngFor="let menuitem of topMenuItems.getMenuitem()" >
+          <a class="navigation-item" routerLinkActive="active" [routerLink]="['/', menuitem.state]" [queryParams]="{menuItemName: menuitem.name, menuItemState: menuitem.state, menuItemGroup: menuitem.group}" fxLayout="row" fxLayoutAlign="start center" (click)="currentlyOpen = !currentlyOpen">
+            <span class="name">{{ menuitem.name }}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-toolbar>
