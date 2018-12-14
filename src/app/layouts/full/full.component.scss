@@ -38,24 +38,27 @@ $warnColor: mat-color($color-warn);
 
     header {
       z-index: 2;
+      width: 100vw;
     }
 
     app-headertitle {
       height: 56px;
     }
 
-    footer {
-      background-color: $primaryColor;
-      color: $primaryContrast;
-      min-height: 15px;
-      padding: 5px 20px;
-      font-size: 0.7em;
-      text-align: center;
-    }
+    
   }
 
-  .content {
-    height: 100vh !important;
-    min-height:100vh;
-  }
+
+}
+
+.content {
+  height: 100vh !important;
+}
+footer {
+  background-color: $primaryColor;
+  color: $primaryContrast;
+  min-height: 15px;
+  padding: 5px 20px;
+  font-size: 0.7em;
+  text-align: center;
 }
