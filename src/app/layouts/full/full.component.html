@@ -3,6 +3,7 @@
         <app-header></app-header>
    </header>
    <app-headertitle></app-headertitle>
+   <app-sidebar></app-sidebar>
   <div fxFlex class="main-content">
 <mat-sidenav-container class="sidenav-container" fxFlex>
   <mat-sidenav [opened]="leftSidebarOpen$ | async" mode="side" position="start" #leftnav class="sidebar">
@@ -27,7 +28,7 @@
 
 
       
-      <app-sidebar></app-sidebar>
+      
       <mat-progress-bar *ngIf="loading" mode="indeterminate" color="accent"></mat-progress-bar>
 
       <div class="content" fxLayout="column">

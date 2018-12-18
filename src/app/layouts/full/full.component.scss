@@ -1,5 +1,5 @@
-@import '~@angular/material/theming';
-@import "../../../styles/var";
+@import '~@angular/material/_theming.scss';
+@import "../../../styles/_var.scss";
 
 @include mat-core();
 
