@@ -24,6 +24,6 @@ export class InputsComponent {
   matcher = new MyErrorStateMatcher();
 }
 export class DatepickerStartViewExample {
-  date = new FormControl(new Date());
+  //date = new FormControl(new Date());
   //serializedDate = new FormControl((new Date()).toISOString());
 }

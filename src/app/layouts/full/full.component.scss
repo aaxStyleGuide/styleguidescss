@@ -1,5 +1,5 @@
-@import '~@angular/material/_theming.scss';
-@import "../../../styles/_var.scss";
+@import '~@angular/material/theming';
+@import "../../../styles/var";
 
 @include mat-core();
 
@@ -51,6 +51,7 @@ $warnColor: mat-color($color-warn);
 
 }
 
+.main-content {}
 .content {
   height: 100vh !important;
 }
