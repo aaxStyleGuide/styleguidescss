@@ -1,62 +1,47 @@
-<div fxLayout="column" class="container">
-    <header>
-        <app-header></app-header>
-   </header>
-   <app-headertitle></app-headertitle>
-   <app-sidebar></app-sidebar>
-  <div fxFlex class="main-content">
-<mat-sidenav-container class="sidenav-container" fxFlex>
-  <mat-sidenav [opened]="leftSidebarOpen$ | async" mode="side" position="start" #leftnav class="sidebar">
-    <div fxLayout="row" fxLayoutAlign="start stretch" class="sidebar-container">
-      <div class="sidebar-content">
+
+<mat-sidenav-container class="sidenav-container" fullscreen>
+    <mat-sidenav [opened]="leftSidebarOpen$ | async" mode="side" position="start" #leftnav class="sidebar">
+      <div fxLayout="row" fxLayoutAlign="start stretch" class="sidebar-container">
+        <div class="sidebar-content">
+        </div>
       </div>
-    </div>
-  </mat-sidenav>
-
-
-  <mat-sidenav [opened]="rightSidebarOpen$ | async" mode="over" position="end" #rightnav class="sidebar">
-    <div fxLayout="row" fxLayoutAlign="start stretch" class="sidebar-container">
-      <div class="sidebar-content">
-        Right sidebar
+    </mat-sidenav>
+  
+  
+    <mat-sidenav [opened]="rightSidebarOpen$ | async" mode="over" position="end" #rightnav class="sidebar">
+      <div fxLayout="row" fxLayoutAlign="start stretch" class="sidebar-container">
+        <div class="sidebar-content">
+          Right sidebar
+        </div>
       </div>
-    </div>
-  </mat-sidenav>
-
-  <mat-sidenav-content>
-    <div class="page-wrap" fxLayout="column">
-
-
-
-      
-      
-      <mat-progress-bar *ngIf="loading" mode="indeterminate" color="accent"></mat-progress-bar>
-
-      <div class="content" fxLayout="column">
-          <div class="router-contents" fxLayout="column">
-            <router-outlet></router-outlet>
-          </div>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <div class="page-wrap" fxLayout="column">
+  
+        <header role="banner">
+             <app-header></app-header>
+        </header>
+  
+        <app-headertitle></app-headertitle>
+        <app-sidebar></app-sidebar>
+        <mat-progress-bar *ngIf="loading" mode="indeterminate" color="accent"></mat-progress-bar>
+  
+        <div class="content" fxLayout="column">
+            <div class="router-contents" fxLayout="column">
+              <router-outlet></router-outlet>
+            </div>
+        </div>
+  
+        <footer fxFlex="20px">
+          &copy; allaboutXpert v{{ version }}
+        </footer>
+  
       </div>
-
-
-
-
-    </div>
-  </mat-sidenav-content>
-
-</mat-sidenav-container>
-</div>
-<footer fxFlex="20px" style="flex: 1 1 20px;
-box-sizing: border-box;
-max-height: 20px;
-min-height: 20px;
-height: 25px;
-position: absolute;
-bottom: 0;
-width: 100%;
-z-index: 666;">
-&copy; allaboutXpert v{{ version }}
-</footer>
-
-</div>
-
-
+    </mat-sidenav-content>
+  
+  </mat-sidenav-container>
+  
+  
+  
+  

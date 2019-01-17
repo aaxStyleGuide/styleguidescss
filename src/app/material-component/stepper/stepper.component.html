@@ -6,8 +6,9 @@
     <div fxFlex.gt-sm="100%" fxFlex="100">
         <mat-card>
             <mat-card-content>
+                <a class="stackblitzstyle" style="float: right;" href="https://stackblitz.com/github/aaxStyleGuide/styleguidescss?file=src/app/material-component/stepper/stepper.component.ts" target="_blank">
+                  <img src="../../../assets/images/stackblitz_icon.png"></a>
                 <mat-card-title>Stepper</mat-card-title>
-                <mat-card-subtitle>Check the <code class=""><a href="https://material.angular.io/components/stepper/overview">Official Component</a></code></mat-card-subtitle>
                 <button mat-raised-button (click)="isLinear = true" id="toggle-linear">Enable linear mode</button>
                 <mat-horizontal-stepper [linear]="isLinear">
                   <mat-step [stepControl]="firstFormGroup">

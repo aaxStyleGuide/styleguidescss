@@ -31,8 +31,6 @@ export class AppSidebarComponent implements OnDestroy {
       this.menuItemState = params['menuItemState'];
       this.menuItemName = params['menuItemName'];
     });
-    console.log(this.menuItemState);
-    console.log(this.menuItemName);
   }
 
   ngOnDestroy(): void {

@@ -1,6 +1,11 @@
 <mat-card>
   <mat-card-content>    
+      <a class="stackblitzstyle" style="float: right;" href="https://stackblitz.com/github/aaxStyleGuide/styleguidescss?file=src/app/material-component/tables/tables.component.ts" target="_blank">
+        <img src="../../../assets/images/stackblitz_icon.png"></a>
   <mat-card-title>Table</mat-card-title>
+ 
+  <div class="select-container">
+ 
     <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
       <!-- Position Column -->
       <ng-container matColumnDef="position">
@@ -41,5 +46,6 @@
       <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
       <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
     </mat-table>
+  </div>
   </mat-card-content>
 </mat-card>

@@ -32,7 +32,6 @@ export class HeadertitleComponent {
 
       this.menuItemGroup = params['menuItemGroup'];
       if (this.menuItemGroup !== undefined) {
-        console.log(this.menuItemGroup);
         this.topMenuItemName = this.menuItemGroup;
       }
     });

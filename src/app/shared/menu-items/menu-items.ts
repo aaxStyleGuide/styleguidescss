@@ -28,7 +28,6 @@ const TYPOMENUITEMS = [
 
 
 const COLOURMENUITEMS = [
-  { state: 'colourpalette', type: 'link', name: 'Colour Palette', icon: 'crop_7_5', group: 'Colours' },
   { state: 'colours', type: 'link', name: 'Colours', icon: 'crop_7_5', group: 'Colours' },
 ];
 
@@ -41,7 +40,6 @@ const IMAGERYMENUITEMS = [
 @Injectable()
 export class MenuItems {
   getMenuitem(name: string): Menu[] {
-    console.log(name);
     switch (name) {
       case 'formcomponent': {
         return FORMMENUITEMS;
